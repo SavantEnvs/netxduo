@@ -1,0 +1,9 @@
+project: savantenvs/netxduo
+target: fuzz_rsa
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rsa/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rsa
+    libfuzzer: true
+    timeout: 30

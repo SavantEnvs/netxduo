@@ -1,0 +1,2 @@
+# keep .git and all sources; drop only generated build output
+build
